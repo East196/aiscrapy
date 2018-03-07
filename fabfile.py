@@ -10,3 +10,7 @@ def pull():
 
 def commit(doc="clean"):
     local("git add . && git commit -m %s" % doc)
+
+
+def push(doc="clean"):
+    local("git add . && git commit -m %s && git push" % doc)
